@@ -1,0 +1,35 @@
+.btn-primary{
+    background-color: #112148 !important;
+    border-color: #11214838 !important;
+}
+
+.btn-primary:hover {
+    color: #112148;
+    background-color: #ffffff !important;
+    border-color: #112148 !important;
+    border: 1.5px solid #112148 !important
+}
+
+.btn-primary:focus {
+    box-shadow: none;
+}
+
+.card-shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.carousel-control-prev-icon {
+    background-image: none !important;
+}
+
+.carousel-control-next-icon {
+    background-image: none !important;
+}
+
+#introCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 80vh;
+      }
+

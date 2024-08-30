@@ -1,0 +1,78 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block py-0" style="z-index: 2000;" *ngIf="!getHeaderState()" >
+  <div class="container-fluid justify-content-center" >
+    <!-- Navbar brand -->
+    <img src="/assets/img/navbarLogo.png" style="width: 88px;
+    height: 56px;
+    padding: 5px;">
+    
+    <!-- <div class="collapse navbar-collapse" id="navbarExample01">
+      <ul class="navbar-nav me-auto mb-lg-0" style="margin-left: 20px;">
+        <li class="nav-item active">
+          <a class="nav-link" aria-current="page" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login" style="margin-left: 15px;">Login</a>
+        </li>
+      </ul>
+
+      
+    </div> -->
+  </div>
+</nav>
+<!-- Navbar 2-->
+<nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block py-0" style="z-index: 2000;" *ngIf="value">
+  <div class="container-fluid">
+    <!-- Navbar brand -->
+    <img src="/assets/img/navbarLogo.png" style="width: 88px;
+    height: 56px;
+    padding: 5px;">
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+      aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarExample01">
+      <ul class="navbar-nav me-auto mb-lg-0" style="margin-left: 20px;">
+        <li class="nav-item active">
+          <a class="nav-link" aria-current="page" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/client" style="margin-left: 15px;">Clients</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/organization" style="margin-left: 15px;">Organizations</a>
+        </li>
+        
+        
+      </ul>
+
+      <ul class="navbar-nav list-inline">
+        <!-- Icons -->
+        <li class="">
+          <a class="nav-link" (click)="logOut()" >
+            <i class="fa fa-sign-out"></i>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+
+<!--Footer-->
+<footer class="footer-bg text-lg-start">
+    
+  <!-- Copyright -->
+  <div class="text-center p-3 text-light" >
+    © 2022 Copyright:
+    <a class="text-light">GitBusterzz</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!--Footer-->
+
+

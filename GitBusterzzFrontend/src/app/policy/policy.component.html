@@ -1,0 +1,185 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid breadcrumb-direction">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+                <li class="breadcrumb-item"><a href="/policy">Policies List</a></li>
+            </ol>
+        </nav>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="table-responsive">
+        <div class="table-wrapper card">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h2><b> List Of Policies</b></h2>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn btn-primary" data-mdb-toggle="modal"
+                            data-mdb-target="#policyModal"><i class="fa fa-plus"></i> Add Policy</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="policyModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Add Policy</h5>
+                            <button type="button" class="btn-close btn-close-white" data-mdb-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <form novalidate>
+                                    <div class="row">
+                                        
+                                        <div class="col-md-8">
+                                            <div class="form-group ">
+                                                <label class="mb-2">Policy Name</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group ">
+                                                <label class="mb-2">Premium</label>
+                                                <input type="number" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mt-3">
+                                            <div class="form-group ">
+                                                <label class="mb-2">Residence</label>
+                                                <select class="form-control">
+                                                    <option>Select</option>
+                                                    <option>Urban</option>
+                                                    <option>Rural</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mt-3">
+                                            <div class="form-group ">
+                                                <label class="mb-2">Dependents</label>
+                                                <select class="form-control">
+                                                    <option>Select</option>
+                                                    <option>0</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mt-3">
+                                            <div class="form-group">
+                                                <label class="mb-2">Age</label>
+                                                <input type="number" class="form-control">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group mt-3">
+                                            <label class="mb-2">Description</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3">
+                                            </textarea>
+                                        </div>
+                                        
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save Policy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th style="
+                                width: 10%;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;">
+                            S. No.
+                        </th>
+                        <th style="
+                                width: 70%;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;">
+                            Policy Name
+                        </th>
+
+                        <th style="
+                                width: 20%;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;">
+                            Actions
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> </td>
+                        <td> </td>
+
+                        <td style="align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        display: flex;">
+
+                            <a class="icons">
+                                <img class="icon-img mx-3" src="/assets/img/pencil.png">
+                            </a>
+                            <a class="icons">
+                                <img class="icon-img mx-3" src="/assets/img/delete.png">
+                            </a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td> </td>
+
+                        <td style="align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        display: flex;">
+
+                            <a class="icons">
+                                <img class="icon-img mx-3" src="/assets/img/pencil.png">
+                            </a>
+                            <a class="icons">
+                                <img class="icon-img mx-3" src="/assets/img/delete.png">
+                            </a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td> </td>
+
+                        <td style="align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        display: flex;">
+
+                            <a class="icons">
+                                <img class="icon-img mx-3" src="/assets/img/pencil.png">
+                            </a>
+                            <a class="icons">
+                                <img class="icon-img mx-3" src="/assets/img/delete.png">
+                            </a>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
